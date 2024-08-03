@@ -1,0 +1,86 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.card-image-wrapper {
+  position: absolute;
+  top: -7rem;
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.card-background {
+  width: 140px;
+  height: 140px;
+  background-color: #7C3AED;
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  z-index: -10;
+  left: 10px;
+}
+
+.card-text-center {
+  text-align: center;
+  margin-top: 7px;
+}
+
+.card-name {
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.card-job {
+  color: #7C3AED;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.card-quote-icon {
+  color: #7C3AED;
+  margin-top: 5px;
+}
+
+.card-quote-text {
+  color: #64748B;
+  margin-top: 4px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .card-image-wrapper {
+    top: -5rem;
+  }
+
+  .card-image, .card-background {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card-name {
+    font-size: 1.5rem;
+  }
+
+  .card-job {
+    font-size: 0.875rem;
+  }
+
+  .card-quote-icon {
+    margin-top: 3px;
+  }
+
+  .card-quote-text {
+    font-size: 0.875rem;
+  }
+}
